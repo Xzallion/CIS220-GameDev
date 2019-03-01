@@ -64,7 +64,7 @@ public class Rocketship : MonoBehaviour {
     public void RCS()
     {
         rigidbody.freezeRotation = true;
-        float rotationThisFrame = rocketThrust * Time.deltaTime;
+        float rotationThisFrame = rocketRotation * Time.deltaTime;
 
         if (Input.GetKey(KeyCode.A))
         {
